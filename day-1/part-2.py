@@ -10,7 +10,7 @@ windows = list(windowed(lines, 3))
 lastWindowSum = None
 for window in windows:
     currentWindowSum = sum(window)
-    if lastWindowSum is not None and currentWindowSum > lastWindowSum: 
+    if lastWindowSum is not None and currentWindowSum > lastWindowSum:
         count += 1
 
     lastWindowSum = currentWindowSum
