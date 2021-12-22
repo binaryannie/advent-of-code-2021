@@ -1,9 +1,11 @@
 # Advent of Code 2021
 
+This is my repo for [Advent of Code 2021](https://adventofcode.com/2021/)
+
 ## Setup
 
-You just want python3 installed. I'm trying to do this without any additional
-modules so you should be good to go with Python 3 installed!
+I'm trying to do this without any additional modules so you should be good to go
+with Python 3 installed!
 
 ## Day 1
 
