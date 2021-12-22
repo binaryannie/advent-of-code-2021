@@ -9,8 +9,7 @@ inputFile = open('input.txt', 'r')
 commands = list(map(commandToTuple, inputFile.readlines()))
 
 forwardValue = directionValue(commands, 'forward')
-backValue = directionValue(commands, 'back')
 upValue = directionValue(commands, 'up')
 downValue = directionValue(commands, 'down')
 
-print((forwardValue - backValue) * (downValue - upValue))
+print(forwardValue * (downValue - upValue))
