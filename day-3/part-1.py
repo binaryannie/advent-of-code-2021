@@ -1,9 +1,5 @@
-# .rstrip('\n')
-
 inputFile = open('input.txt', 'r')
 reportLines = list(map(lambda line: line.rstrip('\n'), inputFile.readlines()))
-
-# print(reportLines)
 
 numberOfReportLines = len(reportLines)
 reportLineLength = len(reportLines[0])
