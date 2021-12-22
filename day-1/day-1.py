@@ -1,12 +1,12 @@
 
 inputFile = open('input.txt', 'r')
-lines = inputFile.readlines()
  
 count = 0
 lastLine = None
-for line in lines:
-    if lastLine is not None and line > lastLine: 
+for line in inputFile.readlines():
+    if lastLine is not None and int(line) > int(lastLine): 
         count += 1
+
     lastLine = line
 
 print(count)
