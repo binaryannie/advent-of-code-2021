@@ -3,12 +3,12 @@ def windowed(list, windowSize):
         yield list[i:i+windowSize]
 
 inputFile = open('input.txt', 'r')
-lines = list(map(int, inputFile.readlines()))
+depths = list(map(int, inputFile.readlines()))
 
 count = 0
-windows = list(windowed(lines, 3))
+depthWindows = list(windowed(depths, 3))
 lastWindowSum = None
-for window in windows:
+for window in depthWindows:
     currentWindowSum = sum(window)
     if lastWindowSum is not None and currentWindowSum > lastWindowSum:
         count += 1

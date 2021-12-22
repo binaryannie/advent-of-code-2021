@@ -1,12 +1,12 @@
-
 inputFile = open('input.txt', 'r')
+depths = list(map(int, inputFile.readlines()))
  
 count = 0
-lastLine = None
-for line in inputFile.readlines():
-    if lastLine is not None and int(line) > int(lastLine): 
+lastDepth = None
+for depth in depths:
+    if lastDepth is not None and depth > lastDepth:
         count += 1
 
-    lastLine = line
+    lastDepth = depth
 
 print(count)
