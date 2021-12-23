@@ -1,8 +1,8 @@
-def findMostCommonValue(reportLines, digit):
-    return str(int(sum(map(lambda line: int(line[digit]), reportLines)) > len(reportLines)/2))
+def findMostCommonValue(lines, digit):
+    return str(int(sum(map(lambda line: int(line[digit]), lines)) >= len(lines)/2))
 
-def findLeastCommonValue(reportLines, digit):
-    return str(int(sum(map(lambda line: int(line[digit]), reportLines)) < len(reportLines)/2))
+def findLeastCommonValue(lines, digit):
+    return str(int(sum(map(lambda line: int(line[digit]), lines)) < len(lines)/2))
 
 inputFile = open('input.txt', 'r')
 reportLines = list(map(lambda line: line.rstrip('\n'), inputFile.readlines()))
@@ -27,9 +27,7 @@ for i in range(0, reportLineLength):
 
     if(oxygenGeneratorRating is not None and co2ScrubberRating is not None):
         break
-    
 
-print(oxygenGeneratorRating, co2ScrubberRating)
 
 oxygenGeneratorRating = int(oxygenGeneratorRating, 2)
 co2ScrubberRating = int(co2ScrubberRating, 2)
